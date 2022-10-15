@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Affordable Cafeteria Recipes - Recipes</title>
+  <link rel ="stylesheet"   href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+  #grad1 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(188, 237, 182) 0%, rgb(125, 242, 119) 100%);
+    margin: 0px;
+    height: 800px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  margin-left: 110px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtns {
+  font-size: 20px;
+  margin-left: 340px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+.openbtn:hover {
+  background-color: #444;
+}
+.openbtns:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+</style>
+<script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "600px";
+  document.getElementById("main").style.marginLeft = "400px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+</head>
+
+
+
+ <body id="grad1">
+<div class="nav-bar">
+  
+  <img class="silver-oaks-logo" src="images/silver-oaks.png">
+<button class="Home-2" onclick="location.href='index.html'" type="button">Home</button>
+<button class="About-2" onclick="location.href='About.html'" type="button">About</button>
+<button class="Recipes-2" onclick="location.href='Recipes.html'" type="button">Recipes</button>
+
+
+<input class="search-bar-2" type="text" placeholder="Search">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="">
+    <p class="p-3">To make the Greek Salad's Dressing, you need :</p>
+    <a>¼ cup extra-virgin olive oil</a>
+    <a>1 garlic clove, minced</a>
+    <a>½ teaspoon dried oregano, more for sprinkling</a>
+    <a>¼ teaspoon salt</a>
+    <a>Freshly ground black pepper</a>
+    <a>For the salad:</a>
+    <a>11 English cucumber, cut lengthwise, seeded, and sliced ¼-inch thick</a>
+    <a>1 green bell pepper, chopped into 1-inch pieces</a> 
+    <a>2 cups halved cherry tomatoes</a>
+    <a>5 ounces feta cheese, cut into ½ inch cubes (optional (preferably don't use it to incrase benefits))</a>
+    <a>⅓ cup thinly sliced red onion</a>
+    <a>⅓ cup pitted olives</a>
+    <a>⅓ cup fresh mint leaves</a>
+    <a><p class="p-3">Instructions:</p></a>
+  <a>  Make the dressing: In a small bowl, whisk together the 
+      olive oil, vinegar, garlic, oregano, , salt, and several grinds of pepper.
+      On a large platter, arrange the cucumber, green pepper, cherry tomatoes, 
+      feta cheese, red onions, and olives. Drizzle with the dressing and very gently
+       toss. Sprinkle with a few generous pinches of oregano and top with the mint leaves. Season to taste and serve.
+     
+    </a>
+<a>Recipe taken from https://www.loveandlemons.com/greek-salad/</a>
+
+
+
+
+</div>
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()"><p class="recipe-click">Greek Salad : Click on the Image for the Recipe</p> <img src="images/salad.webp" width="33.33%"></button>  
+
+</div>
+<p class="one">Only one recipe has been added due to technical issues</p>
+</body>
+</html>
